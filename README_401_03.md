@@ -18,6 +18,7 @@ It was nice challenge ;  all of knowledge we studied them in previous courses
 ### Testing Image for code challenge 03
 ### To make Test for the code you have to type 'npm test 03' in the terminal 
 ![Code_401_03](Images/array-binary-search.PNG)
+![Code_401_03 GitHub Test](Images/test_03.PNG)
 
 ### Whiteboard Process Image for code challenge 03
 
