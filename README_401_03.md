@@ -22,7 +22,7 @@ It was nice challenge ;  all of knowledge we studied them in previous courses
 
 ### Whiteboard Process Image for code challenge 03
 
-![Code_401_03_Whiteboard](Images/code challenge 03 WhiteBoard.PNG)
+![Code_401_03_Whiteboard](Images/code_challenge_03_WhiteBoard.PNG)
 
 
 ## Approach & Efficiency
