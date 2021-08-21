@@ -2,6 +2,22 @@
 
 const Node = require('./Node')
 
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 05 - Linked List
+
+------------------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------------------------
+Linked List Class
+Create a Linked List class
+    => Within your Linked List class, include a head property.
+        =>Upon instantiation, an empty Linked List should be created.
+------------------------------------------------------------------------------------------------ */
+
+
 class Linked_List {
     constructor() {
         this.head = null
@@ -26,9 +42,12 @@ class Linked_List {
     includesMethod(value) {
         let current = this.head
 
-        while (current.next !== null) {
-            if (current.value === value)
+        while (current !== null) {
+            if (current.value === value){
                 return true
+            }
+            current = current.next
+               
         }
         return false
     }
@@ -38,8 +57,9 @@ class Linked_List {
         let current = this.head
         let result = ''
 
-        while(current.next !== null){
+        while(current !== null){
             result = result + `{ ${current.value} } -> `
+            current = current.next
         }
         result = result + 'NULL'
 

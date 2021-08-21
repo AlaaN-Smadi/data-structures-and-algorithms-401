@@ -15,8 +15,8 @@ It was nice challenge ;  all of knowledge we studied them in previous courses
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ### Testing Image for code challenge 05
-### To make Test for the code you have to type 'npm test 05Node' && 'npm test 05List' in the terminal 
-![Code_401_05](Images/Class_05_test.PNG) <!--  Need New Image  -->
+### To make Test for the code you have to type 'npm test 05' in the terminal 
+![Code_401_05](Images/Class_05_test.PNG)  
 
 
 ### Whiteboard Process Image for code challenge 05
@@ -27,6 +27,6 @@ It was nice challenge ;  all of knowledge we studied them in previous courses
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
 
-I used for loop , map and quality test to make sure that all of my functions will work 
+I used while loop and quality test to make sure that all of my functions will work 
 I used replit to test my functions before test them on VS Code
 
