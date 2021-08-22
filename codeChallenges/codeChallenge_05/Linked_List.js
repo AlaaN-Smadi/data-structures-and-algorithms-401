@@ -43,21 +43,21 @@ class Linked_List {
         let current = this.head
 
         while (current !== null) {
-            if (current.value === value){
+            if (current.value === value) {
                 return true
             }
             current = current.next
-               
+
         }
         return false
     }
 
 
-    toStringMethod(){
+    toStringMethod() {
         let current = this.head
         let result = ''
 
-        while(current !== null){
+        while (current !== null) {
             result = result + `{ ${current.value} } -> `
             current = current.next
         }
@@ -65,6 +65,89 @@ class Linked_List {
 
         return result
     }
+
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 06 - Linked List Insertions
+
+------------------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------------------------
+    Linked List Class
+    Create a Linked List class
+        => Within your Linked List class, include a head property.
+            =>Upon instantiation, an empty Linked List should be created.
+------------------------------------------------------------------------------------------------ */
+
+    append(value) {
+
+        let node = new Node(value)
+
+        if (this.head == null) {
+            this.head = node
+            return
+        }
+
+        let current = this.head
+
+        while (current.next !== null) {
+            current = current.next
+        }
+
+        current.next = node
+    }
+
+
+    insert_Before(value, newValue) {
+
+        let node = new Node(newValue)
+
+        let current = this.head
+
+        if(current.value === value){
+            node.next = current
+            this.head = node
+
+            return ("Process Success")
+        }
+
+        while (current !== null) {
+
+            if (current.next.value === value) {
+
+                node.next = current.next
+                current.next = node
+                return ("Process Success")
+            }
+            current = current.next
+        }
+
+        return ('No change, method exception')
+    }
+
+
+    insert_After(value, newValue){
+        let node = new Node(newValue)
+
+        let current = this.head
+
+        while (current !== null) {
+
+            if (current.value === value) {
+
+                node.next = current.next
+                current.next = node
+                return ("Process Success")
+            }
+            current = current.next
+        }
+
+        return ('No change, method exception')
+
+    }
+
 }
 
 module.exports = Linked_List
