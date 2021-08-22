@@ -12,7 +12,11 @@ link for code Challenge on GitHub.com : [Open Link](https://github.com/AlaaN-Sma
 <!-- Embedded whiteboard image -->
 ### Testing Image for code challenge 06
 ### To make Test for the code you have to type 'npm test 06' in the terminal 
+
 ![Code_401_06](Images/Class_06_test.PNG)
+
+![Code_401_06_Whiteboard](Images/code_challenge_06_WhiteBoard.PNG) 
+
 
 
 ## Approach & Efficiency
