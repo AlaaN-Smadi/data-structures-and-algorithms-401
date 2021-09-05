@@ -11,7 +11,26 @@ class BinarySearchTree extends BinaryTree {
         if (this.root == null) {
             this.root = node;
         } else {
-            this.getLocation(this.root, node);
+            let current = this.root
+            while (current !== null) {
+                if (current.value > value) {
+                    if (current.left !== null) {
+                        current = current.left
+                    } else {
+                        current.left = node
+                        return('added')
+                    }
+                } else {
+                    if (current.right !== null) {
+                        current = current.right
+                    } else {
+                        current.right = node
+                        return('added')
+
+                    }
+                }
+            }
+
         }
     }
 
