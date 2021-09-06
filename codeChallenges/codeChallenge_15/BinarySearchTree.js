@@ -14,7 +14,7 @@ class BinarySearchTree extends BinaryTree {
             this.getLocation(this.root, node);
         }
     }
-
+ 
     contains(value) {
         let current = this.root
         while (current !== null) {
