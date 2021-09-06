@@ -17,9 +17,13 @@ myTree.add(35)
 
 
 describe('Challenge 15', () => {
-    test('It should if the brackets are balanced or not :=> ', () => {
-
+    test('It should check tree functions are working fine or not :=> ', () => {
+        
         expect(myTree.contains(30)).toStrictEqual(true);
+        expect(myTree.contains(121)).toStrictEqual(false);
+        expect(myTree.inOrder()).toStrictEqual([30, 35, 40, 50, 60, 70]);
+        expect(myTree.postOrder()).toStrictEqual([35, 30, 40, 70, 60, 50]);
+        expect(myTree.preOrder()).toStrictEqual([50, 40, 30, 35, 60, 70]);
         
         
 
