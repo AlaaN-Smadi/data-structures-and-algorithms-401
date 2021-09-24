@@ -35,6 +35,6 @@ a function called 'InsertionSort' that takes an array as an argument and iterate
 ![insertion sort](Images/Class_26_array.png)
 
 
-**-> Testing of given array**
+**-> Visual of given array**
 
-![Testing of given array](Images/codeChallenge26.png)
+![Visual of given array](Images/codeChallenge26.png)
